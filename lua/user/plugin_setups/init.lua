@@ -1,0 +1,6 @@
+require("user.plugin_setups.telescope")
+require("user.plugin_setups.nvimtree")
+require("user.plugin_setups.treesitter")
+require("user.plugin_setups.lsp")
+require("user.plugin_setups.alpha")
+require("user.plugin_setups.rust_tools")
