@@ -29,6 +29,5 @@ lvim.builtin.which_key.mappings["sc"] = {
 lvim.builtin.which_key.mappings["se"] = { ":Telescope file_browser<cr>", "File Browser" }
 
 -- Disabled
-lvim.builtin.which_key.mappings["s<space>"] = {}
+vim.g.better_whitespace_operator = ""
 lvim.builtin.which_key.mappings["T"] = {}
-
