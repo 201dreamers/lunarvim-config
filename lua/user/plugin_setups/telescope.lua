@@ -7,7 +7,7 @@ lvim.builtin.telescope.theme = "ivy"
 
 lvim.builtin.telescope.extensions["file_browser"] = {
     theme = "ivy",
-    hijack_netrw = true,
+    hijack_netrw = false,
 }
 lvim.builtin.telescope.extensions["ui-select"] = {
     require("telescope.themes").get_dropdown()
