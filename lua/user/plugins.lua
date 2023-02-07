@@ -54,4 +54,5 @@ lvim.plugins = {
             }
         end
     },
+    { 'echasnovski/mini.nvim',    version = false },
 }
