@@ -5,6 +5,41 @@ require("user.plugin_setups.lsp.lua")
 
 -- disable automatic installation of servers
 lvim.lsp.installer.setup.automatic_installation = false
+lvim.lsp.diagnostics.virtual_text = false
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+        vim.lsp.diagnostic.on_publish_diagnostics,
+        {
+            virtual_text = false,
+            underline = true,
+            signs = true,
+        }
+    )
+
+table.insert(
+    lvim.autocommands,
+    {
+        "CursorHoldI",
+        {
+            pattern = "*",
+            callback = function()
+                vim.lsp.buf.signature_help()
+            end,
+        }
+    }
+)
+table.insert(
+    lvim.autocommands,
+    {
+        "CursorHold",
+        {
+            pattern = "*",
+            callback = function()
+                vim.diagnostic.open_float()
+            end,
+        }
+    }
+)
 
 
 --------------

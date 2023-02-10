@@ -25,3 +25,5 @@ vim.opt.colorcolumn = "80,120"
 vim.opt.guifont = { "FiraCode Nerd Font Mono", "h14" }
 vim.opt.timeout = true
 vim.opt.timeoutlen = 200
+vim.opt.swapfile = false
+vim.opt.updatetime = 300
