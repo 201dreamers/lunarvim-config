@@ -22,8 +22,9 @@ vim.opt.fillchars = {
     verthoriz = '█',
 }
 vim.opt.colorcolumn = "80,120"
-vim.opt.guifont = { "FiraCode Nerd Font Mono", "h14" }
+vim.opt.guifont = { "Fira Code Regular Nerd Font Complete Mono", "h14" }
+-- vim.opt.guifont = { "FiraCodeNerdFontCompleteM-Regular", "h10" }
 vim.opt.timeout = true
 vim.opt.timeoutlen = 200
 vim.opt.swapfile = false
-vim.opt.updatetime = 300
+vim.opt.updatetime = 700
