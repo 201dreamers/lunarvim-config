@@ -1,8 +1,11 @@
 -- <https://www.lunarvim.org/docs/configuration/keybindings>
 
+
+-------------
+-- General --
+-------------
 lvim.leader = "space"
 
--- General
 lvim.keys.normal_mode["|"] = ":vsplit<cr>"
 lvim.keys.normal_mode["\\"] = ":split<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<cr>"
@@ -10,7 +13,16 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<cr>"
 lvim.keys.normal_mode["<A-h>"] = ":BufferLineMovePrev<cr>"
 lvim.keys.normal_mode["<A-l>"] = ":BufferLineMoveNext<cr>"
 
--- Which-key
+---------------
+-- Which-key --
+---------------
+-- Disabled
+vim.g.better_whitespace_operator = ""
+lvim.builtin.which_key.mappings["T"] = {}
+lvim.builtin.which_key.mappings["sp"] = {}
+lvim.builtin.which_key.mappings["sc"] = {}
+
+-- New
 lvim.builtin.which_key.mappings["t"] = {
     name = "Trailing whitespace",
     t = { ":ToggleWhitespace<cr>", "Toggle" },
@@ -27,7 +39,3 @@ lvim.builtin.which_key.mappings["sc"] = {
     "Colorscheme",
 }
 lvim.builtin.which_key.mappings["se"] = { ":Telescope file_browser<cr>", "File Browser" }
-
--- Disabled
-vim.g.better_whitespace_operator = ""
-lvim.builtin.which_key.mappings["T"] = {}
