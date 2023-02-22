@@ -21,6 +21,10 @@ lvim.plugins = {
         dependencies = { "nvim-telescope/telescope.nvim" }
     },
     {
+        "nvim-telescope/telescope-live-grep-args.nvim",
+        dependencies = { "nvim-telescope/telescope.nvim" }
+    },
+    {
         "nvim-telescope/telescope-ui-select.nvim",
         dependencies = { "nvim-telescope/telescope.nvim" }
     },

@@ -21,6 +21,7 @@ vim.g.better_whitespace_operator = ""
 lvim.builtin.which_key.mappings["T"] = {}
 lvim.builtin.which_key.mappings["sp"] = {}
 lvim.builtin.which_key.mappings["sc"] = {}
+lvim.builtin.which_key.mappings["st"] = {}
 
 -- New
 lvim.builtin.which_key.mappings["t"] = {
@@ -33,7 +34,8 @@ lvim.builtin.which_key.mappings["t"] = {
 -- lvim.builtin.which_key.mappings["e"] = { ":NvimTreeFocus<cr>", "Focus Explorer" }
 lvim.builtin.which_key.mappings["bp"] = { ":BufferLinePick<cr>", "File Browser" }
 
-lvim.builtin.which_key.mappings["sg"] = { ":Telescope git_files<cr>", "Git files" }
+lvim.builtin.which_key.mappings["st"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", "Text" }
+lvim.builtin.which_key.mappings["sg"] = { ":Telescope git_files<cr>", "Git Files" }
 lvim.builtin.which_key.mappings["sp"] = { ":Telescope projects<cr>", "Projects" }
 lvim.builtin.which_key.mappings["sc"] = {
     ":lua require('telescope.builtin').colorscheme(require('telescope.themes').get_dropdown({enable_preview = true}))<cr>",
