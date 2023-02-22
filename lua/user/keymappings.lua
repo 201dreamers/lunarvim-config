@@ -30,9 +30,10 @@ lvim.builtin.which_key.mappings["t"] = {
     n = { ":NextTrailingWhitespace<cr>", "Next" },
     p = { ":PrevTrailingWhitespace<cr>", "Previous" },
 }
-lvim.builtin.which_key.mappings["e"] = { ":NvimTreeFocus<cr>", "Focus Explorer" }
+-- lvim.builtin.which_key.mappings["e"] = { ":NvimTreeFocus<cr>", "Focus Explorer" }
 lvim.builtin.which_key.mappings["bp"] = { ":BufferLinePick<cr>", "File Browser" }
 
+lvim.builtin.which_key.mappings["sg"] = { ":Telescope git_files<cr>", "Git files" }
 lvim.builtin.which_key.mappings["sp"] = { ":Telescope projects<cr>", "Projects" }
 lvim.builtin.which_key.mappings["sc"] = {
     ":lua require('telescope.builtin').colorscheme(require('telescope.themes').get_dropdown({enable_preview = true}))<cr>",
