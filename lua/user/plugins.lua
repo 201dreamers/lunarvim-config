@@ -1,12 +1,19 @@
 lvim.plugins = {
     -- Colorschemes
     { "lunarvim/colorschemes" },
+    { "christianchiarulli/nvcode-color-schemes.vim" },
+    { "Mofiqul/vscode.nvim" },
+    { "sainnhe/edge" },
+    { "rebelot/kanagawa.nvim" },
+    { "EdenEast/nightfox.nvim" },
     {
         "briones-gabriel/darcula-solid.nvim",
         dependencies = { "rktjmp/lush.nvim" }
     },
-    { "christianchiarulli/nvcode-color-schemes.vim" },
-    { "Mofiqul/vscode.nvim" },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin"
+    },
 
     -- Telescope
     {
@@ -18,11 +25,16 @@ lvim.plugins = {
         dependencies = { "nvim-telescope/telescope.nvim" }
     },
 
-    -- Lang-specific
-    { 'simrat39/rust-tools.nvim' },
-
     -- Others
-    { "folke/lsp-colors.nvim",   event = "BufRead" },
+    { "folke/lsp-colors.nvim",                   event = "BufRead" },
+    { "nmac427/guess-indent.nvim" },
+    { "simrat39/rust-tools.nvim" },
+    { "mechatroner/rainbow_csv" },
+    { "evedovelli/rst-robotframework-syntax-vim" },
+    {
+        "ggandor/leap.nvim",
+        config = function() require('leap').add_default_mappings() end
+    },
     {
         "norcalli/nvim-colorizer.lua",
         config = function()
@@ -40,13 +52,12 @@ lvim.plugins = {
             )
         end,
     },
-    { "nmac427/guess-indent.nvim" },
     {
         "folke/todo-comments.nvim",
         event = "BufRead",
     },
     {
-        'ntpeters/vim-better-whitespace',
+        "ntpeters/vim-better-whitespace",
         config = function()
             vim.g.better_whitespace_filetypes_blacklist = {
                 'toggleterm', 'TelescopePrompt', 'diff', 'git', 'gitcommit',
@@ -54,5 +65,4 @@ lvim.plugins = {
             }
         end
     },
-    { 'echasnovski/mini.nvim',    version = false },
 }
